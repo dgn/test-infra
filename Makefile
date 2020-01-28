@@ -1,4 +1,4 @@
-HUB ?= docker.io/dgrimm
+HUB ?= registry.gitlab.com/dgrimm/istio
 IMAGE ?= maistra-builder
 TAG ?= latest
 

@@ -7,7 +7,7 @@ COPY scripts /tmp/scripts
 WORKDIR /tmp/scripts
 RUN chmod -R +x /tmp/scripts/ 
 RUN /tmp/scripts/install_base.sh
-RUN /tmp/scripts/install_go_13.sh
+RUN /tmp/scripts/install_go.sh
 RUN /tmp/scripts/install_helm.sh
 RUN /tmp/scripts/install_shellcheck.sh
 
