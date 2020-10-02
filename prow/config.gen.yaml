@@ -74,7 +74,7 @@ postsubmits:
     - main
     spec:
       containers:
-      - image: "quay.io/maistra-dev/maistra-builder:1.2"
+      - image: "quay.io/maistra-dev/maistra-builder:2.0"
         imagePullPolicy: Always
         command:
         - make
@@ -99,7 +99,7 @@ postsubmits:
     max_concurrency: 1
     spec:
       containers:
-      - image: "quay.io/maistra-dev/maistra-builder:1.2"
+      - image: "quay.io/maistra-dev/maistra-builder:2.0"
         imagePullPolicy: Always
         command:
         - entrypoint
@@ -126,7 +126,7 @@ postsubmits:
     max_concurrency: 1
     spec:
       containers:
-      - image: "quay.io/maistra-dev/maistra-builder:1.2"
+      - image: "quay.io/maistra-dev/maistra-builder:2.0"
         imagePullPolicy: Always
         command:
         - entrypoint
@@ -255,7 +255,7 @@ postsubmits:
       repo: test-infra
     spec:
       containers:
-      - image: "quay.io/maistra-dev/maistra-builder:1.2"
+      - image: "quay.io/maistra-dev/maistra-builder:2.0"
         imagePullPolicy: Always
         command:
         - ../test-infra/tools/automator.sh
@@ -291,7 +291,7 @@ postsubmits:
       repo: test-infra
     spec:
       containers:
-      - image: "quay.io/maistra-dev/maistra-builder:1.2"
+      - image: "quay.io/maistra-dev/maistra-builder:2.0"
         imagePullPolicy: Always
         command:
         - ../test-infra/tools/automator.sh
@@ -327,7 +327,7 @@ postsubmits:
       repo: test-infra
     spec:
       containers:
-      - image: "quay.io/maistra-dev/maistra-builder:1.2"
+      - image: "quay.io/maistra-dev/maistra-builder:2.0"
         imagePullPolicy: Always
         command:
         - ../test-infra/tools/automator.sh
@@ -562,7 +562,7 @@ presubmits:
       - maistra-2.0
     spec:
       containers:
-      - image: "quay.io/maistra-dev/maistra-builder:1.2"
+      - image: "quay.io/maistra-dev/maistra-builder:2.0"
         imagePullPolicy: Always
         command:
         - entrypoint
@@ -591,7 +591,7 @@ presubmits:
       - main
     spec:
       containers:
-      - image: "quay.io/maistra-dev/maistra-builder:1.2"
+      - image: "quay.io/maistra-dev/maistra-builder:2.0"
         imagePullPolicy: Always
         command:
         - make
@@ -611,7 +611,7 @@ presubmits:
       - main
     spec:
       containers:
-      - image: "quay.io/maistra-dev/maistra-builder:1.2"
+      - image: "quay.io/maistra-dev/maistra-builder:2.0"
         imagePullPolicy: Always
         command:
         - make
@@ -632,7 +632,7 @@ presubmits:
     max_concurrency: 2
     spec:
       containers:
-      - image: "quay.io/maistra-dev/maistra-builder:1.2"
+      - image: "quay.io/maistra-dev/maistra-builder:2.0"
         imagePullPolicy: Always
         command:
         - entrypoint
@@ -656,7 +656,7 @@ presubmits:
     max_concurrency: 2
     spec:
       containers:
-      - image: "quay.io/maistra-dev/maistra-builder:1.2"
+      - image: "quay.io/maistra-dev/maistra-builder:2.0"
         imagePullPolicy: Always
         command:
         - entrypoint
@@ -762,7 +762,7 @@ presubmits:
     rerun_command: /test unit
     spec:
       containers:
-      - image: "quay.io/maistra-dev/maistra-builder:1.2"
+      - image: "quay.io/maistra-dev/maistra-builder:2.0"
         imagePullPolicy: Always
         command:
         - make
@@ -875,7 +875,7 @@ presubmits:
           value: -mod=vendor
         - name: BUILD_WITH_CONTAINER
           value: "0"
-        image: "quay.io/maistra-dev/maistra-builder:1.2"
+        image: "quay.io/maistra-dev/maistra-builder:2.0"
         imagePullPolicy: Always
         securityContext:
           privileged: true
@@ -952,7 +952,7 @@ presubmits:
           value: -mod=vendor
         - name: BUILD_WITH_CONTAINER
           value: "0"
-        image: "quay.io/maistra-dev/maistra-builder:1.2"
+        image: "quay.io/maistra-dev/maistra-builder:2.0"
         imagePullPolicy: Always
         securityContext:
           privileged: true
@@ -991,7 +991,7 @@ presubmits:
       - playground
     spec:
       containers:
-      - image: "quay.io/maistra-dev/maistra-builder:1.2"
+      - image: "quay.io/maistra-dev/maistra-builder:2.0"
         imagePullPolicy: Always
         command:
         - make
@@ -1017,7 +1017,7 @@ presubmits:
       preset-copr: "true"
     spec:
       containers:
-      - image: "quay.io/maistra-dev/maistra-builder:1.2"
+      - image: "quay.io/maistra-dev/maistra-builder:2.0"
         imagePullPolicy: Always
         command:
         - make
@@ -1043,7 +1043,7 @@ presubmits:
       preset-copr: "true"
     spec:
       containers:
-      - image: "quay.io/maistra-dev/maistra-builder:1.2"
+      - image: "quay.io/maistra-dev/maistra-builder:2.0"
         imagePullPolicy: Always
         command:
         - make
@@ -1093,7 +1093,7 @@ presubmits:
     max_concurrency: 1
     spec:
       containers:
-      - image: "quay.io/maistra-dev/maistra-builder:1.2"
+      - image: "quay.io/maistra-dev/maistra-builder:2.0"
         imagePullPolicy: Always
         command:
         - entrypoint
